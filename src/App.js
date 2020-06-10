@@ -5,6 +5,10 @@ import ListItems from "./ListItems";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
+// npm i --save @fortawesome/fontawesome-svg-core
+// npm i --save @fortawesome/free-solid-svg-icons
+// npm i --save @fortawesome/react-fontawesome
+
 library.add(faTrash);
 
 class App extends Component {
@@ -82,11 +86,11 @@ class App extends Component {
             <button type="submit">Add</button>
           </form>
         </header>
-        <ListItems
+         <ListItems
         items={this.state.items}
         deleteItem={this.deleteItem}
         setUpdate={this.setUpdate}
-        ></ListItems>
+    ></ListItems>
       </div>
     );
   }
